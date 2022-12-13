@@ -1,0 +1,61 @@
+
+
+.search-box{
+    margin: 0;
+    padding: 0;
+}
+.m-container label{
+    text-align: start;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.m-container .label-hidden{
+    visibility:hidden;
+}
+
+.m-container .search-box{
+    width: 100%;
+}
+
+.single-card{
+    width: 22%;
+    margin: 10px;
+    background-color: orange;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single-card-green{
+    background-color: greenyellow;
+}
+.single-card-green{
+    background-color: violet;
+}
+.single-card-green{
+    background-color: blue;
+}
+
+.card-content  h4{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+}
+
+.card-content span{
+    font-size: 2rem;
+    color: white;
+}
+
+.card-icon{
+    font-size: 2rem;
+    color: white !important;
+    font-weight: 400 !important;
+}
+
+.dashboard-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
