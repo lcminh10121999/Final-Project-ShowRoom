@@ -32,7 +32,7 @@ const blogData = [
 
   {
     id: 3,
-    title: "The best way to give trip",
+    title: "Safety Instructions Ưhile Riding",
     author: "Muhib",
     date: "12 Dec, 2020",
     time: "9pm",

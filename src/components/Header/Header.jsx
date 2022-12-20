@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
-import "../../styles/header.css";
+import "../Header/header.css";
 
 const navLinks = [
   {
@@ -43,7 +43,7 @@ const Header = () => {
               <div className="header__top__left">
                 <span>Need Help?</span>
                 <span className="header__top__help">
-                  <i class="ri-phone-fill"></i> +1-202-555-0149
+                  <i class="ri-phone-fill"></i> +84 ***-***-***
                 </span>
               </div>
             </Col>
@@ -73,7 +73,9 @@ const Header = () => {
                   <Link to="/home" className=" d-flex align-items-center gap-2">
                     <i class="ri-car-line"></i>
                     <span>
-                      Rent Car <br /> Service
+                      Car
+                      <br />
+                      ShowRoom
                     </span>
                   </Link>
                 </h1>
@@ -86,8 +88,8 @@ const Header = () => {
                   <i class="ri-earth-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Bangladesh</h4>
-                  <h6>Sylhet City, Bangladesh</h6>
+                  <h4>Đà Nẵng</h4>
+                  <h6>------------</h6>
                 </div>
               </div>
             </Col>
@@ -98,8 +100,8 @@ const Header = () => {
                   <i class="ri-time-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Sunday to Friday</h4>
-                  <h6>10am - 7pm</h6>
+                  <h4>MonDay to Friday</h4>
+                  <h6>8am - 5pm</h6>
                 </div>
               </div>
             </Col>
