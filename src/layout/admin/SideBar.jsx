@@ -11,52 +11,84 @@ import {
 } from "react-icons/fa";
 import { MdCreate } from "react-icons/md";
 import { BiCategory } from "react-icons/bi";
+import { SiBrandfolder } from "react-icons/si";
 import "../../style/admin/SideBar.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import SideBarSubMenu from "./SideBarSubMenu";
+import TopNav from "./TopNav";
 function SideBar(props) {
   const routes = [
     {
       path: "/admin/dashboard",
-      name: "Bảng Tin",
+      name: "Dashboard",
       icon: <FaHome />,
     },
     {
       path: "/admin/category",
-      name: "Quản lý danh mục",
+      name: "Category",
       icon: <BiCategory />,
       subRoute: [
         {
           path: "/admin/category/list",
-          name: "Danh mục sản phẩm",
+          name: "List Category",
           icon: <FaList />,
         },
         {
           path: "/admin/category/create",
-          name: "Tạo danh mục",
+          name: "Create Category",
+          icon: <MdCreate />,
+        },
+      ],
+    },
+    ,
+    {
+      path: "/admin/brand",
+      name: "Brand",
+      icon: <SiBrandfolder />,
+      subRoute: [
+        {
+          path: "/admin/brand/list",
+          name: "List Brand",
+          icon: <FaList />,
+        },
+        {
+          path: "/admin/brand/create",
+          name: "Create Brand",
           icon: <MdCreate />,
         },
       ],
     },
     {
       path: "/admin/product",
-      name: "Quản lý sản phẩm",
+      name: "Product",
       icon: <FaProductHunt />,
+      subRoute: [
+        {
+          path: "/admin/product/list",
+          name: "List Product",
+          icon: <FaList />,
+        },
+        {
+          path: "/admin/product/create",
+          name: "Create Product",
+          icon: <MdCreate />,
+        },
+      ],
     },
     {
       path: "/admin/user",
-      name: "Quản lý người dùng",
+      name: "User",
       icon: <FaUserAlt />,
     },
     {
       path: "/admin/order",
-      name: "Quản lý đơn hàng",
+      name: "Order",
       icon: <FaShoppingCart />,
     },
   ];
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const showAnimation = {
     hidden: {
       width: 0,
@@ -73,6 +105,15 @@ function SideBar(props) {
       },
     },
   };
+  const test = "205px + 10px 38px + 10px";
+  const styleTopNavIsOpen = {
+    width: "84%",
+    left: "calc(16%)",
+  };
+  const styleTopNavIsNotOpen = {
+    width: "96.48%",
+    left: "calc(3.5%)",
+  };
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div
@@ -86,11 +127,12 @@ function SideBar(props) {
         },
       }}
     >
+      <TopNav style={isOpen ? styleTopNavIsOpen : styleTopNavIsNotOpen} />
       <motion.div
         animate={{ width: isOpen ? "80%" : "35%" }}
         className="sidebar"
       >
-        <div className="top-section" style={{ height: isOpen ? "10%" : "10%" }}>
+        <div className="top-section" style={{ height: isOpen ? "6%" : "6%" }}>
           {isOpen && (
             <motion.h3
               variants={showAnimation}
@@ -102,9 +144,16 @@ function SideBar(props) {
               FiboErp
             </motion.h3>
           )}
-          <div className="bars">
+          {/* <div className="bars">
             <FaBars onClick={toggle} />
-          </div>
+          </div> */}
+
+          <motion.div
+            className="bars"
+            animate={isOpen ? { rotate: -90 } : { rotate: 90 }}
+          >
+            <FaAngleDown onClick={toggle} />
+          </motion.div>
         </div>
         <section className="routes">
           {routes.map((route) => {

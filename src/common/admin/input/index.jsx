@@ -9,11 +9,13 @@ function Input(props) {
       <label>{props.label}</label>
       <input
         name={props.name}
-        className="form-control"
+        className="form-control shadow-none"
         placeholder={props.placeholder}
         type={props.type}
         onChange={props.onchange}
         value={props.value}
+        style={props.style}
+        placeholderTextColor={props.placeholdercolor}
       />
     </div>
   );

@@ -1,34 +1,33 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import TitleContent from "../../../common/admin/Title";
-import { AiOutlinePlus } from "react-icons/ai";
+import "../../../style/admin/Brand.css";
+import Input from "../../../common/admin/input";
 import { BiSearch, BiEditAlt } from "react-icons/bi";
 import { MdDeleteOutline } from "react-icons/md";
-import "../../../style/admin/Category.css";
-import Input from "../../../common/admin/input";
 
-Category.propTypes = {};
+Brand.propTypes = {};
 
-function Category(props) {
+function Brand(props) {
   const data = [
     {
       id: 1,
-      name: "Sport car",
+      name: "Honda",
     },
     {
       id: 2,
-      name: "SUV",
+      name: "BMW",
     },
     {
       id: 3,
-      name: "Luxury",
+      name: "Ferrari",
     },
     {
       id: 4,
-      name: "Van",
+      name: "Lexus",
     },
   ];
-  const [dataCategory, setDataCategory] = useState(data);
+  const [dataBrand, setDataBrand] = useState(data);
   const inputSearchStyle = {
     style: {
       background: "rgb(0, 7, 61)",
@@ -40,7 +39,7 @@ function Category(props) {
     <div className="m-container">
       <div className="m-content">
         <div className="title-content">
-          <TitleContent title="Category" />
+          <TitleContent title="Brand" />
         </div>
         <div className="search-box mt-3">
           <div class="row m-0">
@@ -61,29 +60,23 @@ function Category(props) {
             </div>
           </div>
         </div>
-        <div className="list-category">
-          <div className="category-table">
+        <div className="list-brand">
+          <div className="brand-table">
             <table>
               <thead>
                 <tr>
                   <th>#</th>
                   <th>Name</th>
-                  <th>Description</th>
-                  <th>Status</th>
                   <th>Action</th>
                 </tr>
               </thead>
               <tbody>
-                {dataCategory.map((item, count) => {
+                {dataBrand.map((item, count) => {
                   var count = count + 1;
                   return (
                     <tr>
                       <td>{count}</td>
                       <td>{item.name}</td>
-                      <td className="table-category__description">
-                        {item.name}
-                      </td>
-                      <td className="">{item.name}</td>
                       <td className="d-flex">
                         <p className="m-0 pr-2">
                           <BiEditAlt
@@ -114,4 +107,4 @@ function Category(props) {
   );
 }
 
-export default Category;
+export default Brand;

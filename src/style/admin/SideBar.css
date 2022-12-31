@@ -4,8 +4,9 @@
 }
 .sidebar{
     background: rgb(0, 7, 61);
-    height: 100vh;
+    height:100%;
     overflow-y: auto;
+    min-height: 100vh;
 }
 
 .routes{
@@ -23,6 +24,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 15px;
+    min-height: 10vh;
 }
 
 .logo{

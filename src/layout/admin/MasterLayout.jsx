@@ -17,7 +17,7 @@ MasterLayout.propTypes = {};
 function MasterLayout(props) {
   return (
     <div className="container-fluid master-layout">
-      <div class="row">
+      <div class="row master-layout__row">
         <SideBar />
         {/* <TopNav /> */}
         <Outlet />

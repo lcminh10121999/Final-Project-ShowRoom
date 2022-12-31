@@ -1,0 +1,142 @@
+.car-detail__top{
+    display: flex;
+    column-gap: 2rem;
+}
+.car-detail__top .car-information{
+    width: 60%;
+    padding: 20px;
+    background-color: rgb(0, 7, 61);
+}
+.car-detail__img{
+    width: 40%;
+    padding: 20px;
+    background-color: rgb(0, 7, 61);
+}
+
+.car-detail__img h5 {
+    color: #ffd700;
+}
+
+.car-detail{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.car-detail__img img {
+    max-width: 100%;
+}
+
+.car-information{
+    display: flex;
+    column-gap: 1rem;
+    color: white;
+}
+.car-information .car-info__left{
+    width: 50%;
+}
+.car-information .car-info__left .car-group{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.car-information .car-info__left .car-group p{
+    margin: 0;
+    width: 50%;
+    color: rgb(169, 160, 160);
+    font-size: .9rem;
+}
+.car-information .car-info__left .car-group:nth-child(1) p:nth-child(1){
+    width: 100%;
+}
+.car-information .car-info__left .car-group span{
+    color: #ffd700;
+    font-size: 1.2rem;
+
+}
+
+.car-info__right{
+    width: 50%;
+}
+.car-info__right .description{
+    color: rgb(169, 160, 160);
+    font-size: .9rem;
+}
+
+.car-detail__bottom{
+    display: flex;
+    padding: 20px 0;
+    column-gap: 2rem;
+    justify-content: space-between;
+}
+
+.detail-bar-chart {
+    width: 45%;
+    padding: 5px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47); 
+}
+.detail-line-chart{
+    width: 45%;
+    padding: 5px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47); 
+}
+
+.chart-total{
+    padding: 5px;
+    
+}
+.chart-total p {
+    margin: 0;
+    color: rgb(169, 160, 160);
+    font-size: .9rem;
+}
+.chart-total p span{
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+
+.car-product__comment{
+    width: 100%;
+    background-color: rgb(0, 7, 61);
+    color: white;
+    padding: 20px;
+}
+
+.car-product__comment .table{
+    margin-top: 10px;
+}
+.car-product__comment .table .product-comment__ratting__group{
+    background-color: rgb(45, 51, 89);
+    padding: 10px;
+    display: flex;
+    column-gap: 1rem;
+    margin: 10px 0;
+}
+.car-product__comment .table .product-comment__ratting__group img{
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+}
+
+.car-product__comment .table .product-comment__ratting__group .product-comment__ratting__name .name{
+    color: #ffd700;
+    font-size: .8rem;
+    font-weight: 400;
+}
+.car-product__comment .table .product-comment__ratting__group .product-comment__ratting__name .ratting{
+    font-size: .8rem;
+    display: flex;
+}
+.car-product__comment .table .product-comment__ratting__group .product-comment__ratting__name .time{
+    color: rgb(169, 160, 160);
+    font-size: .6rem;
+    font-weight: 400;
+}
+.car-product__comment .table .product-comment__ratting__group .product-comment__ratting__name .comment{
+    padding: 10px 0px;
+    color: rgb(169, 160, 160);
+    font-size: .8rem;
+    font-weight: 400;
+}
+
