@@ -1,0 +1,123 @@
+
+
+.search-box{
+    margin: 0;
+    padding: 0;
+}
+.search-box .row{
+width: 100%;
+}
+.m-container label{
+    text-align: start;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.m-container .label-hidden{
+    visibility:hidden;
+}
+
+.m-container .search-box{
+    width: 100%;
+}
+
+.single-card{
+    width: 22%;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 110px;
+    border-radius: 5px;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.card-content  h4{
+    font-size: 1rem;
+    font-weight: bold !important;
+    color: rgb(169, 160, 160);
+    font-weight: 400;
+    text-align: start;
+}
+
+.card-content span{
+    font-size: 1rem;
+    color: black;
+}
+.single-card .card-content .card-left, .card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+}
+.single-card .card-content .card-right .percentage{
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+  
+}
+.single-card .card-content .card-right .positive {
+    color: green;
+}
+.single-card .card-content .card-right .negative {
+    color: red;
+    }
+.card-icon{
+    display: flex;
+    justify-content: center;
+   padding: 5px;
+ 
+   border-radius: 3px;
+   align-items: center;
+   align-self: end;
+}
+
+.single-card .card-content .card-right .card-icon svg{
+    justify-self: center;
+}
+.dashboard-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.chart-content{
+    display: flex;
+    justify-content: space-between;
+    min-height: 65%;
+    padding:0 1rem;
+    
+}
+
+.chart{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47); 
+}
+
+.bar-chart {
+    width: 60%;
+    height: 90%;
+    padding: 5px 5px 10px 5px;
+}
+
+.pie-chart {
+    width: 30%;
+    height: 90%;
+    padding: 5px 5px 10px 5px;
+}
+
+.chart-title{
+     text-align: start;
+     border-bottom: 1px solid #ebedf2;
+     padding: 5px 5px;
+     font-weight: bold;
+     color: rgb(169, 160, 160);
+}

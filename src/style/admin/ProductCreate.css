@@ -1,0 +1,87 @@
+.product-create__form {
+    width: 100%;
+    background-color: rgb(0, 7, 61);
+    color:  rgb(169, 160, 160);
+    margin-top: 10px;
+}
+
+.product-create__form .select-product__form select{
+    border: none;
+    width: 100%;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: rgb(45, 51, 89);
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+
+form .form-top{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 20px;
+}
+
+
+.form-bottom{
+    padding: 20px;
+}
+
+.form-middle{
+    padding: 20px 20px 0px 20px;
+}
+.button-58 {
+    align-items: center;
+    background-color: #06f;
+    border: 2px solid #06f;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-58:focus {
+    color: white;
+    border: none;
+  }
+  
+  .button-58:hover {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+    border: none;
+  }
+  
+  .button-58:active {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+    border: none;
+  }
+  
+  @media (min-width: 768px) {
+    .button-58 {
+      min-width: 170px;
+    }
+  }
+

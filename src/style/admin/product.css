@@ -1,0 +1,122 @@
+
+
+  .product-search{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #ebedf2; */
+    background-color: rgb(0, 7, 61);
+    height: 40px;
+    margin: 10px 0;
+    
+  }
+  .product-search .form-group{
+    width: 90%;
+    margin-bottom: 0 !important;
+  }
+  .product-search label{
+    display: none;
+  }
+  
+.filter-car__wrapper{
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+
+.filter-car__item select{
+
+border: none;
+padding: 7px 20px;
+border-radius: 5px;
+background-color: rgb(0, 7, 61);
+cursor: pointer;
+color: white;
+}
+.list-car{
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.car-item{
+  margin-top: 10px;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.97);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.97); 
+  padding: 20px;
+   border-radius: 2px;
+   background-color: rgb(0, 7, 61);
+   color: white;
+}
+.car-item .car-img{
+  width: 100%;
+}
+.car-item .car-img img{
+  max-width: 100%;
+}
+.car-item__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+.car-item__title h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffd700;
+}
+.car-item__title span svg {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.car-item__top{
+  text-align: start;
+}
+.car-item__top p {
+  font-size: .9rem;
+  font-weight: 400;
+  color: rgb(169, 160, 160);
+  
+}
+.car-item__top .car-brand__category {
+  display: flex;
+  gap: 10px;
+  
+}
+.car-item__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 00px;
+}
+
+.car-item__bottom .car-item__left {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.car-item__bottom .car-item__left p{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.car-item__bottom .car-item__right svg {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.car-item__bottom .car-item__right{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+.car-item__bottom .car-item__right p{
+  margin: 0;
+}
